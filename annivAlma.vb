@@ -25,7 +25,8 @@ Module Module1
             Console.WriteLine("------------------------------")
             authentication()
         End If
-        Console.Write("Sekali lagi deh. Tanggal jadian kita berapa ya? (dd-mm-yyyy)")
+        Threading.Thread.Sleeo(3000)
+        Console.Write("Sekali lagi deh. Tanggal jadian kita berapa ya? (dd-mm-yyyy): ")
         jawaban = Console.ReadLine()
         If jawaban <> "09-09-2017" Then
             Console.WriteLine("SALAH! Formatnya bener ga?")
@@ -33,6 +34,7 @@ Module Module1
             Console.WriteLine("")
             authentication()
         End If
+        welcome()
     End Sub
 
     Sub initial()
@@ -46,5 +48,53 @@ Module Module1
         Console.WriteLine("")
         authentication()
     End Sub
+
+    Sub welcome()
+      Console.WriteLine("Congratulation, you've verified yourself!")
+      Console.WriteLine("")
+      Console.WriteLine("-----------------------------------")
+      Console.WriteLine("Topan's Late Anniversary Saver")
+      Console.WriteLine("-----------------------------------")
+      Console.WriteLine("")
+      Console.WriteLine("")
+      Console.WriteLine("Welcome, Princess Alma Arabella!")
+      Console.WriteLine("What would you like to know first?")
+      Console.WriteLine("")
+      Console.WriteLine("1. Sebuah pesan dari Topan untuk Alma")
+      Console.WriteLine("2. Where do we go next?")
+      Console.Write("Please enter the number (1 or 2): ")
+      Dim nomor As String = Console.ReadLine()
+      If nomor = 1
+        pesan()
+      ElseIf nomor = 2
+        place()
+      Else
+        Console.WriteLine("Waduh gada pilihannya, ulangin.")
+        welcome()
+      End If
+
+      Sub pesan()
+      Console.WriteLine("Oke, I'm going to give my message to you. If ready, please press Enter.")
+      Console.ReadLine()
+      Console.WriteLine("-----------------------------------------------------------------------")
+      Console.WriteLine("Hai, Fawnia Alma!")
+      Console.WriteLine("SEKARAANG TANGGAL 9 SEPTEMBER!!!!!")
+      Console.WriteLine("HAPPY ANNIVERSARY SAYANGGG!! hehehe")
+      Console.WriteLine("")
+      Console.WriteLine("Please press Enter:")
+      Console.ReadLine()
+      Console.WriteLine("Honestly, ingatan aku nembak kamu tuh masih terasa seperti kemarin. Ga kerasa aja udah 2 taun. Thankyou for everything that you have done sampe kita masih bisa bareng disini sekarang. Walopun kadang aku nyebelin banget, kamu juga kadang nyebelin banget, tapi aku bersyukur kita masih bareng sampe sekarang. Tau ga apa yang paling Topan suka dari Alma selama 2 taun ini? Topan paling suka kalo Alma ngelendot gitu sambil meluk heheh. ")
+      Console.WriteLine("But I love every little thing that you do, your smile, your laugh, kamu ngucir rambut. Baumu juga aku sukaa!!!!
+Mau ngomong apalagi ya….
+Oiya im so sorry kita gabisa dinner hari ini. Makanya aku kasih app ini namanya late anniv saver wwkwk")
+      Console.WriteLine("All in all, inget ya aku bersyukur punya kamu, bisa sama kamu, im glad that youre exist. Because the world will absolutely feel different without you.")
+      Console.WriteLine("")
+      Console.WriteLine("I love you Alma, forever and always.")
+      Console.WriteLine("")
+      Console.WriteLine("Dari,")
+      Console.WriteLine("Topan")
+
+
+      End Sub
 
 End Module
