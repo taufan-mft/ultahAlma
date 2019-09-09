@@ -87,14 +87,49 @@ Module Module1
       Console.WriteLine("But I love every little thing that you do, your smile, your laugh, kamu ngucir rambut. Baumu juga aku sukaa!!!!
 Mau ngomong apalagi ya….
 Oiya im so sorry kita gabisa dinner hari ini. Makanya aku kasih app ini namanya late anniv saver wwkwk")
-      Console.WriteLine("All in all, inget ya aku bersyukur punya kamu, bisa sama kamu, im glad that youre exist. Because the world will absolutely feel different without you.")
+      Console.WriteLine("All in all, inget ya aku bersyukur punya kamu, bisa sama kamu, im glad that youre exist. Because the world will absolutely feel different without you. Looking forward to spend the rest of my life with youu..")
       Console.WriteLine("")
       Console.WriteLine("I love you Alma, forever and always.")
       Console.WriteLine("")
       Console.WriteLine("Dari,")
       Console.WriteLine("Topan")
-
-
+      Console.WriteLine("")
+      Console.WriteLine("This is the end of the message, my lady.")
+      Console.Write("Sudah ngeliat opsi nomer 2 belum, beb? (sudah / belum): ")
+      Dim sudah3 As String = Console.ReadLine()
+      If sudah3 = "sudah"
+        Console.WriteLine("Oke, please call Topan at his WhatsApp, he's been wondering if u can solve this wkwkw")
+        Console.WriteLine("Tekan apasaja untuk keluar...")
+        Console.ReadKey()
+      ElseIf sudah3 = "belum"
+        place()
+      Else
+          Console.WriteLine("Gada opsinya, ulangin ya")
+          pesan()
+      End If
       End Sub
+
+    Sub place()
+      Console.WriteLine("Nanti hari Jumat kita dinner ya, aku kasih kamu pilihan tempat:")
+      Console.WriteLine("1. Ambalika Java Heritage Rooftop poolside")
+      Console.WriteLine("2. Tepi Jalan")
+      Console.WriteLine("3. Table Nine")
+      Console.WriteLine("4. Korea Garden")
+      Console.WriteLine("5. Red Chili")
+      Console.WriteLine("Kalau udah milih, please call Topan at his WhatsApp after u finish this program.")
+      Console.WriteLine("Udah liat opsi nomer 1 belum, beb? (sudah / belum): ")
+      Dim sudah3 As String = Console.ReadLine()
+      If sudah3 = "sudah"
+        Console.WriteLine("Oke, please call Topan at his WhatsApp, he's been wondering if u can solve this wkwkw")
+        Console.WriteLine("Tekan apasaja untuk keluar...")
+        Console.ReadKey()
+      ElseIf sudah3 = "belum"
+        pesan()
+      Else
+          Console.WriteLine("Gada opsinya, ulangin ya")
+          place()
+      End If
+
+
 
 End Module
